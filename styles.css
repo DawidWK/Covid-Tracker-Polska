@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #47449e;
+}
+
+h1 { 
+    font-family: "Segoe UI";
+    font-size: 40px;
+    color: beige;
+    font-style: normal;
+    font-variant: normal; 
+    font-weight: 700;
+} 
+
+h2 { 
+    font-family: "Segoe UI";
+    font-size: 30px;
+    font-style: normal; 
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fcfcfd; 
+}
+
+div.head-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.title {
+    font-size: 7em;
+    color: #fcfcfd;
+    text-align: center;
+}
+
+.column {
+    border-spacing: 10px;
+    border: 5px solid #63649f;
+    background: #373372;
+    border-radius: 15px;
+    padding-left: 10px;
+    float: left;
+    margin: 10px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.today, .total{
+    width: 45%;
+}
+
+.total {
+    height: 150px;
+}
+
+.status {
+    width: 29.6%;
+}
+
+.footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: 	#949cb4;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.footer h1 {
+    font-size: 15px;
+}
+
+.footer a { 
+    color: inherit; 
+} 
+  
+ /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 1500px){
+    .today, .total{
+        width: 535px;
+    }
+    .status {
+        width: 350px;
+    }
+    .table {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+}
