@@ -6,7 +6,6 @@ function getCovidStats() {
     fetch('https://coronavirus-19-api.herokuapp.com/countries/Poland')
     .then(function(resp) { return resp.json() })
     .then(function (data) {
-        console.log(data)
         let todayCases = data.todayCases;
         let todayDeaths = data.todayDeaths;
         let cases = data.cases;

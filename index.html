@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Covid Tracker 🦠</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script type="text/javascript" src="app.js"></script>
     </head>
-    <body>
-        <div class="center">
-            <div id="main">
-                <div id="head-title">
-                    <h1 class="title">
-                        Covid Tracker
-                    </h1>
+    <body class="center">
+        <div class="container">
+            <h1 class="title">
+                Covid Tracker <span class="gentle-hover-shake">🦠</span>
+            </h1>
+            <div class="table">
+                <div class="row">
+                    <div class="column today">
+                        <p >Today's Cases</p>
+                        <p id="todayCases"> loading... </p>
+                    </div>
+                    <div class="column today">
+                        <p>Today's Deaths</p>
+                        <p id="todayDeaths"> loading... </p>
+                    </div>
                 </div>
-                <div class="table">
-                    <div class="row">
-                        <div class="column today">
-                            <h2>Today's Cases</h2>
-                            <h1 id="todayCases"> loading... </h1>
-                        </div>
-                        <div class="column today">
-                            <h2>Today's Deaths</h2>
-                            <h1 id="todayDeaths"> loading... </h1>
-                        </div>
+                <div class="row">
+                    <div class="column total">
+                        <p>Total Cases</p>
+                        <p id="cases"> loading... </p>
                     </div>
-                    <div class="row">
-                        <div class="column total">
-                            <h2>Total Cases</h2>
-                            <h1 id="cases"> loading... </h1>
-                        </div>
-                        <div class="column total">
-                            <h2>Total Deaths</h2>
-                            <h1 id="deaths"> loading... </h1>
-                        </div>
+                    <div class="column total">
+                        <p>Total Deaths</p>
+                        <p id="deaths"> loading... </p>
                     </div>
-                    <div class="row">
-                        <div class="column status">
-                            <h2>Cases per million</h2>
-                            <h1 id="casesPerOneMillion"> loading... </h1>
-                        </div>
-                        <div class="column status">
-                            <h2>Deaths per million</h2>
-                            <h1 id="deathsPerOneMillion"> loading... </h1>
-                        </div>
-                        <div class="column status">
-                            <h2>Tests per million</h2>
-                            <h1 id="testsPerOneMillion"> loading... </h1>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="column status">
+                        <p>Cases per million</p>
+                        <p id="casesPerOneMillion"> loading... </p>
+                    </div>
+                    <div class="column status">
+                        <p>Deaths per million</p>
+                        <p id="deathsPerOneMillion"> loading... </p>
+                    </div>
+                    <div class="column status">
+                        <p>Tests per million</p>
+                        <p id="testsPerOneMillion"> loading... </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <h1>Information provided via <a href="https://github.com/javieraviles/covidAPI">Covid API</a></h1>
+            <p class="footer">Information provided via <a href="https://github.com/javieraviles/covidAPI">Covid API</a></p>
         </div>
     </body>
-
 </html>
